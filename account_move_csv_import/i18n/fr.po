@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: account-move-import\n"
+"POT-Creation-Date: 2020-10-27 11:51+0100\n"
+"PO-Revision-Date: 2020-10-27 11:55+0100\n"
+"Last-Translator: Pascal GOUHIER <p.gouhier@khetys.fr>\n"
+"Language-Team: Pascal GOUHIER\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: wizard/import_move.py:146
+msgid "You must select a file format."
+msgstr "Vous devez sélectionner un format de fichier."
+
+#: wizard/import_move.py:162
+msgid "Imported Journal Entries"
+msgstr "Entrées de journal importées"
+
+#: wizard/import_move.py:347
+#, python-format
+msgid "time data : '%s' in line %s does not match format '%s"
+msgstr "données de temps : « %s » en ligne %s ne correspond pas au format « %s"
+
+#: wizard/import_move.py:500
+msgid "journal codes"
+msgstr "codes de journal"
+
+#: wizard/import_move.py:501
+msgid "account codes"
+msgstr "codes de compte"
+
+#: wizard/import_move.py:502
+msgid "partner reference"
+msgstr "référence du partenaire"
+
+#: wizard/import_move.py:503
+msgid "analytic codes"
+msgstr "codes analytiques"
+
+#: wizard/import_move.py:548
+#, python-format
+msgid "Line %d: missing label."
+msgstr "Ligne %d : étiquette manquante."
+
+#: wizard/import_move.py:551
+#, python-format
+msgid "Line %d: missing date."
+msgstr "Ligne %d : date manquante."
+
+#: wizard/import_move.py:558
+#, python-format
+msgid "Line %d: bad date format %s"
+msgstr "%d de ligne : mauvais format de date %s"
+
+#: wizard/import_move.py:561
+#, python-format
+msgid "Line %d: bad value for credit (%s)."
+msgstr "%d de ligne : mauvaise valeur pour le crédit (%s)."
+
+#: wizard/import_move.py:565
+#, python-format
+msgid "Line %d: bad value for debit (%s)."
+msgstr "Ligne %d : mauvaise valeur pour le débit (%s)."
+
+#: wizard/import_move.py:572
+#, python-format
+msgid ""
+"List of %s that don't exist in Odoo:\n"
+"%s\n"
+"\n"
+msgstr ""
+"Liste des %s qui n’existent pas dans la base:\n"
+"%s\n"
+"\n"
+
+#: wizard/import_move.py:578
+#, python-format
+msgid ""
+"List of misc errors:\n"
+"%s"
+msgstr ""
+"Liste d’erreurs diverses :\n"
+"%s"
+
+#: wizard/import_move.py:608
+#, python-format
+msgid "The journal entry that ends on line %d is not balanced (balance is %s)."
+msgstr "L’entrée de journal qui se termine en ligne %d n’est pas équilibrée (l’équilibre est %s)."
+
+#: wizard/import_move.py:614
+#, python-format
+msgid "move should have more than 1 line num: %s,data : %s"
+msgstr "un mouvement doit avoir plus de 1 ligne num: %s,data : %s"
+
+#: wizard/import_move.py:627
+#, python-format
+msgid "The journal entry that ends on the last line is not balanced (balance is %s)."
+msgstr "L’entrée de journal qui se termine sur la dernière ligne n’est pas équilibrée (l’équilibre est %s)."
