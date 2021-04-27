@@ -1,76 +1,374 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_move_csv_import
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: account-move-import\n"
-"POT-Creation-Date: 2020-10-27 11:51+0100\n"
-"PO-Revision-Date: 2020-10-27 11:55+0100\n"
-"Last-Translator: Pascal GOUHIER <p.gouhier@khetys.fr>\n"
-"Language-Team: Pascal GOUHIER\n"
-"Language: fr_FR\n"
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-27 14:40+0000\n"
+"PO-Revision-Date: 2021-04-27 17:03+0200\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-Flags-xgettext: --add-comments\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: Pascal GOUHIER <p.gouhier@khetys.fr>\n"
+"Language: fr_FR\n"
 
-#: wizard/import_move.py:146
-msgid "You must select a file format."
-msgstr "Vous devez sélectionner un format de fichier."
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "<em>Columns</em>:"
+msgstr "<em>Colonnes</em>:"
 
-#: wizard/import_move.py:162
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "<em>Decimal separator</em>: . (dot) or , (coma)"
+msgstr "<em>Séparateur décimal</em>: . (point) ou , (coma)"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "<em>Encoding</em>: UTF-8"
+msgstr "<em>Encodage</em>: UTF-8"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "<em>Field separator</em>: auto-detected"
+msgstr "<em>Séparateur de champ</em>: auto-détecté"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "<em>Text separator</em>: \" (quote)"
+msgstr "<em>Séparateur de texte</em>: \" (quote)"
+
+#. module: account_move_csv_import
+#: selection:account.move.import,file_encoding:0
+msgid "ASCII"
+msgstr "ASCII"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Account code"
+msgstr "Code du compte"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__advanced_options
+msgid "Advanced Options"
+msgstr "Options avancées"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Analytic account code"
+msgstr "Code de compte analytique"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_line__import_external_id
+msgid ""
+"Can be used to tag imported move. Delete all importred move if need (error "
+"on file imported)"
+msgstr ""
+"Peut être utilisé pour marquer les mouvements importés. Supprimer tous les "
+"mouvements importés si nécessaire (erreur dans le fichier importé)"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: account_move_csv_import
+#: selection:account.move.import,file_format:0
+msgid "Ciel Paye"
+msgstr "Ciel Paye"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Credit"
+msgstr "Crédit"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Date (DD/MM/YYYY or configurable)"
+msgstr "Date (DD/MM/YYYY ou configurable)"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__date_format
+msgid "Date Format"
+msgstr "Format de date"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__date_format
+msgid "Date format is applicable only on Generic csv file ex \"%d%m%Y\""
+msgstr ""
+"Le format de date n’est applicable que sur le fichier générique csv ex « %d%m"
+"%Y »"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Debit"
+msgstr "Débit"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: account_move_csv_import
+#: selection:account.move.import,file_format:0
+msgid "FEC (text)"
+msgstr "FEC (texte)"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__file_encoding
+msgid "File Encoding"
+msgstr "Encodage du fichier"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__file_format
+msgid "File Format"
+msgstr "Format de Fichier"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__file_with_header
+msgid "File With Header"
+msgstr "Fichier avec en-tête"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__file_to_import
+msgid "File containing the journal entry(ies) to import."
+msgstr "Fichier contenant l’entrée de journal(aux) à importer."
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__file_to_import
+msgid "File to Import"
+msgstr "Fichier à importer"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__filename
+msgid "Filename"
+msgstr "Nom du fichier"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__force_move_date
+msgid "Force Date"
+msgstr "Force la date comptable"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__force_move_date_required
+msgid "Force Date Required"
+msgstr "Date forcée requise"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__force_journal_id
+msgid "Force Journal"
+msgstr "Force Journal"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__force_journal_required
+msgid "Force Journal Required"
+msgstr "Journal forcé requis"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__force_move_line_name
+msgid "Force Label"
+msgstr "Force le libellé"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__force_move_line_name_required
+msgid "Force Label Required"
+msgstr "Libellé forcé requis"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__force_move_number
+msgid "Force Move Number"
+msgstr "Force le numéro de mouvement"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__force_move_ref
+msgid "Force Reference"
+msgstr "Force la Référence"
+
+#. module: account_move_csv_import
+#: selection:account.move.import,file_format:0
+msgid "Generic CSV"
+msgstr "CSV générique"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_move_csv_import
+#: selection:account.move.import,file_encoding:0
+msgid "ISO 8859-15 (alias Latin1)"
+msgstr "ISO 8859-15 (alias Latin1)"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__move_ref_unique
+msgid "If True, ref is used to detect new move in file."
+msgstr ""
+"Si c’est vrai, ref est utilisé pour détecter le nouveau mouvement dans le "
+"fichier."
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__force_move_number
+msgid ""
+"If True, ref is used to force acount entry number.This option can be used "
+"the save invoice number from an other accountng software in case you change "
+"it to odoo"
+msgstr ""
+"Si c’est vrai, ref est utilisé pour forcer le numéro de mouvement. Cette "
+"option peut être utilisée le numéro de facture d’enregistrer à partir d’un "
+"autre logiciel de comptabilité au cas où vous le changeriez en odoo"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__post_move
+msgid "If True, the journal entry will be posted after the import."
+msgstr "Si c’est vrai, l’entrée du journal sera validée après l’importation."
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__date_by_move_line
+msgid ""
+"If True, we dont't use date to detecte the linesof account move. In odoo "
+"date are on account move."
+msgstr ""
+"Si c’est vrai, nous n’utilisons pas la date pour détecter les lignes de fin "
+"d’écriture. Dans le logiciel, la date est sur la pièce comptable."
+
+#. module: account_move_csv_import
+#: model:ir.actions.act_window,name:account_move_csv_import.account_move_import_action
+#: model:ir.ui.menu,name:account_move_csv_import.account_move_import_menu
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Import Account Move"
+msgstr "Import de pièces comptables"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_line__import_external_id
+msgid "Import External"
+msgstr "Importation externe"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_line__import_reconcile
+msgid "Import Reconcile Ref"
+msgstr "Import Ref de lettrage"
+
+#. module: account_move_csv_import
+#: model:ir.model,name:account_move_csv_import.model_account_move_import
+msgid "Import account move from CSV file"
+msgstr "Transfert de compte d’importation à partir du fichier CSV"
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:162
+#, python-format
 msgid "Imported Journal Entries"
 msgstr "Entrées de journal importées"
 
-#: wizard/import_move.py:347
-#, python-format
-msgid "time data : '%s' in line %s does not match format '%s"
-msgstr "données de temps : « %s » en ligne %s ne correspond pas au format « %s"
+#. module: account_move_csv_import
+#: selection:account.move.import,file_format:0
+msgid "In Extenso"
+msgstr "In Extenso"
 
-#: wizard/import_move.py:500
-msgid "journal codes"
-msgstr "codes de journal"
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__file_with_header
+msgid "Indicate if file contain a headers or not."
+msgstr "Indiquez si le fichier contient ou non un en-tête."
 
-#: wizard/import_move.py:501
-msgid "account codes"
-msgstr "codes de compte"
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Information about the Generic CSV format"
+msgstr "Informations sur le format générique CSV"
 
-#: wizard/import_move.py:502
-msgid "partner reference"
-msgstr "référence du partenaire"
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__date_by_move_line
+msgid "Is date by move line ?"
+msgstr "Est-ce que date par ligne de mouvement ?"
 
-#: wizard/import_move.py:503
-msgid "analytic codes"
-msgstr "codes analytiques"
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__move_ref_unique
+msgid "Is move ref unique ?"
+msgstr "Réf de mouvement est-il unique ?"
 
-#: wizard/import_move.py:548
-#, python-format
-msgid "Line %d: missing label."
-msgstr "Ligne %d : étiquette manquante."
+#. module: account_move_csv_import
+#: model:ir.model,name:account_move_csv_import.model_account_move_line
+msgid "Journal Item"
+msgstr "Élément de journal"
 
-#: wizard/import_move.py:551
-#, python-format
-msgid "Line %d: missing date."
-msgstr "Ligne %d : date manquante."
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Journal code"
+msgstr "Code journal"
 
-#: wizard/import_move.py:558
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__force_journal_id
+msgid ""
+"Journal in which the journal entry will be created, even if the file "
+"indicate another journal."
+msgstr ""
+"Journal dans lequel la pièce comptable sera créée, même si le fichier "
+"indique un autre journal."
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Label"
+msgstr "Description"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__write_uid
+msgid "Last Updated by"
+msgstr "Dernière modification par"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:557
 #, python-format
 msgid "Line %d: bad date format %s"
 msgstr "%d de ligne : mauvais format de date %s"
 
-#: wizard/import_move.py:561
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:560
 #, python-format
 msgid "Line %d: bad value for credit (%s)."
 msgstr "%d de ligne : mauvaise valeur pour le crédit (%s)."
 
-#: wizard/import_move.py:565
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:564
 #, python-format
 msgid "Line %d: bad value for debit (%s)."
 msgstr "Ligne %d : mauvaise valeur pour le débit (%s)."
 
-#: wizard/import_move.py:572
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:550
+#, python-format
+msgid "Line %d: missing date."
+msgstr "Ligne %d : date manquante."
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:548
+#, python-format
+msgid "Line %d: missing label."
+msgstr "Ligne %d : étiquette manquante."
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:572
 #, python-format
 msgid ""
 "List of %s that don't exist in Odoo:\n"
@@ -81,7 +379,8 @@ msgstr ""
 "%s\n"
 "\n"
 
-#: wizard/import_move.py:578
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:578
 #, python-format
 msgid ""
 "List of misc errors:\n"
@@ -90,17 +389,111 @@ msgstr ""
 "Liste d’erreurs diverses :\n"
 "%s"
 
-#: wizard/import_move.py:608
+#. module: account_move_csv_import
+#: selection:account.move.import,file_format:0
+msgid "Nibelis (Prisme)"
+msgstr "Nibelis (Prisme)"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Partner internal reference"
+msgstr "Référence interne des partenaires"
+
+#. module: account_move_csv_import
+#: selection:account.move.import,file_format:0
+msgid "Payfit"
+msgstr "Payfit (Payfit)"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,field_description:account_move_csv_import.field_account_move_import__post_move
+msgid "Post Journal Entry"
+msgstr "Valider les pièces comptables"
+
+#. module: account_move_csv_import
+#: selection:account.move.import,file_format:0
+msgid "Quadra (without analytic)"
+msgstr "Quadra (sans analytique)"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Reconcile ref (used for reconciliation after import)"
+msgstr "Réf de lettrage (utilisée pour la réconciliation après l’importation)"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Ref (used as Journal Entry Ref)"
+msgstr "Réf (utilisé comme réf de mouvement)"
+
+#. module: account_move_csv_import
+#: model_terms:ir.ui.view,arch_db:account_move_csv_import.account_move_import_form
+msgid "Run Import"
+msgstr "Exécuter l'importation"
+
+#. module: account_move_csv_import
+#: model:ir.model.fields,help:account_move_csv_import.field_account_move_import__file_format
+msgid "Select the type of file you are importing."
+msgstr "Sélectionnez le type de fichier que vous importez."
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:607
 #, python-format
 msgid "The journal entry that ends on line %d is not balanced (balance is %s)."
-msgstr "L’entrée de journal qui se termine en ligne %d n’est pas équilibrée (l’équilibre est %s)."
+msgstr ""
+"L’entrée de journal qui se termine en ligne %d n’est pas équilibrée "
+"(l’équilibre est %s)."
 
-#: wizard/import_move.py:614
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:626
+#, python-format
+msgid ""
+"The journal entry that ends on the last line is not balanced (balance is %s)."
+msgstr ""
+"L’entrée de journal qui se termine sur la dernière ligne n’est pas "
+"équilibrée (l’équilibre est %s)."
+
+#. module: account_move_csv_import
+#: selection:account.move.import,file_encoding:0
+msgid "UTF-8"
+msgstr "UTF-8 (en)"
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:146
+#, python-format
+msgid "You must select a file format."
+msgstr "Vous devez sélectionner un format de fichier."
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:501
+#, python-format
+msgid "account codes"
+msgstr "codes de compte"
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:503
+#, python-format
+msgid "analytic codes"
+msgstr "codes analytiques"
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:500
+#, python-format
+msgid "journal codes"
+msgstr "codes de journal"
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:613
 #, python-format
 msgid "move should have more than 1 line num: %s,data : %s"
 msgstr "un mouvement doit avoir plus de 1 ligne num: %s,data : %s"
 
-#: wizard/import_move.py:627
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:502
 #, python-format
-msgid "The journal entry that ends on the last line is not balanced (balance is %s)."
-msgstr "L’entrée de journal qui se termine sur la dernière ligne n’est pas équilibrée (l’équilibre est %s)."
+msgid "partner reference"
+msgstr "référence du partenaire"
+
+#. module: account_move_csv_import
+#: code:addons/account_move_csv_import/wizard/import_move.py:347
+#, python-format
+msgid "time data : '%s' in line %s does not match format '%s"
+msgstr "données de temps : « %s » en ligne %s ne correspond pas au format « %s"
